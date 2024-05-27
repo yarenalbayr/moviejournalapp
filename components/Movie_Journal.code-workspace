@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "Movie_Journal",
+			"path": ".."
+		},
+		{
+			"name": "theme",
+			"path": "../../React/Movie_Journal/theme"
+		},
+		{
+			"name": "screen",
+			"path": "../../React/Movie_Journal/screen"
+		},
+		{
+			"name": "navigation",
+			"path": "../../React/Movie_Journal/navigation"
+		}
+	],
+	"settings": {}
+}

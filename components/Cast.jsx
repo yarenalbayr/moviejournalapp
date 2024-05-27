@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import { fallbackPersonImage, image185 } from '../api/moviesdb'
+import { fallbackPersonImage, image185 } from '../api/moviesdb.js'
 
 export default function Cast({ navigation, cast }) {
     const personName = 'Keanu Reevs'

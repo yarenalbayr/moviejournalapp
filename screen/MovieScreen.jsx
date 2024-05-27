@@ -6,10 +6,10 @@ import { ChevronLeftIcon } from 'react-native-heroicons/outline'
 import { HeartIcon } from 'react-native-heroicons/solid'
 import { styles, theme } from '../theme'
 import { LinearGradient } from 'expo-linear-gradient'
-import Cast from '../../React/MovieApp-react-native/components/Cast'
-import MovieList from '../../React/MovieApp-react-native/components/MovieList'
-import Loading from '../../React/MovieApp-react-native/components/Loading'
-import { fallbackMoviePoster, fetchMovieCredits, fetchMovieDetails, fetchSimilarMovies, image500 } from '../../React/MovieApp-react-native/api/moviesdb'
+import Cast from "../components/Cast";
+import MovieList from "../components/MovieList";
+import Loading from "../components/Loading";
+import { fallbackMoviePoster, fetchMovieCredits, fetchMovieDetails, fetchSimilarMovies, image500 } from "../api/moviesdb.js";
 
 let { width, height } = Dimensions.get('window')
 const ios = Platform.OS == "ios"

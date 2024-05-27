@@ -1,14 +1,13 @@
 import { View, Text, Platform, TouchableOpacity, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Bars3CenterLeftIcon, MagnifyingGlassIcon } from "react-native-heroicons/outline"
-import { StatusBar } from "expo-status-bar";
 import { styles } from "../theme/index"
-import TrendingMovies from "../../React/MovieApp-react-native/components/TrendingMovies";
+import TrendingMovies from "../components/TrendingMovies";
 import { useEffect, useState } from "react";
-import MovieList from "../../React/MovieApp-react-native/components/MovieList";
+import MovieList from "../components/MovieList";
 import { useNavigation } from '@react-navigation/native'
-import Loading from "../../React/MovieApp-react-native/components/Loading";
-import { fetchTrendingMovies, fetchUpcomingMovies } from "../../React/MovieApp-react-native/api/moviesdb";
+import Loading from "../components/Loading";
+import { fetchTrendingMovies, fetchUpcomingMovies } from "../api/moviesdb.js";
 
 
 const ios = Platform.OS == "ios"
@@ -54,7 +53,6 @@ const HomeScreen = () => {
         <View className="flex-1 bg-neutral-800">
             {/* search bar and logo */}
             <SafeAreaView className={ios ? "-mb-2" : "mb-3"}>
-                <StatusBar style="light" />
                 <View className="flex-row justify-between items-center mx-4">
                     <Bars3CenterLeftIcon size={"30"} strokeWidth={2} color="white" />
 

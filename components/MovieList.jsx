@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, ScrollView, TouchableWithoutFeedback, Ima
 import React from 'react'
 import { styles } from '../theme'
 import { useNavigation } from '@react-navigation/native'
-import { fallbackMoviePoster, image185 } from '../api/moviesdb'
+import { fallbackMoviePoster, image185 } from '../api/moviesdb.js'
 
 let { width, height } = Dimensions.get('window')
 
